@@ -124,18 +124,31 @@ export function Onboarding() {
   if (!profile) return
 
   setSelectedAilmentIds(
-    new Set(
-      profile.selectedAilments.map((item) => item.ailment.id)
-    )
+    new Set(profile.selectedAilments.map((item) => item.ailment.id))
+  )
+  setSelectedPreferenceIds(new Set(profile.selectedPreferences))
+  setSelectedJournalIds(new Set(profile.journalEntries))
+
+  setFirstName((prev) => prev || profile.firstName || '')
+  setLastName((prev) => prev || profile.lastName || '')
+  setAge((prev) => prev || String(profile.age ?? ''))
+  setShoppingStores((prev) => {
+    if (prev) return prev
+    const stores = profile.shoppingStores as unknown
+    return Array.isArray(stores) ? stores.join(', ') : String(stores ?? '')
+  })
+  setGender((prev) =>
+    prev || String(profile.gender ?? '').toLowerCase().replace(/_/g, '-')
   )
 
-  setSelectedPreferenceIds(
-    new Set(profile.selectedPreferences)
-  )
-
-  setSelectedJournalIds(
-    new Set(profile.journalEntries)
-  )
+  const loc = profile.location || ''
+  setLocation((prev) => prev || loc)
+  const parts = loc.split(', ')
+  if (parts.length === 2) {
+    setSelectedCity((prev) => prev || parts[0])
+    setCitySearch((prev) => prev || parts[0])
+    setSelectedState((prev) => prev || parts[1])
+  }
 }, [profile])
 
   useEffect(() => {
@@ -815,7 +828,8 @@ const handleJournalNext = async () => {
                     <option value="35-44">35 – 44</option>
                     <option value="45-54">45 – 54</option>
                     <option value="55-64">55 – 64</option>
-                    <option value="65-74">75+</option>
+                    <option value="65-74">65 – 74</option>
+                    <option value="75+">75+</option>
                   </select>
 
                 </div>
