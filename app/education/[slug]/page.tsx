@@ -201,9 +201,6 @@ export default function EducationDetailPage() {
                     </span>
                   </div>
                   <CardTitle className="text-2xl">{ailment.name}</CardTitle>
-                    {ailment.description && (
-                      <p className="text-muted-foreground">{ailment.description}</p>
-                    )}
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {ailment.description && (
