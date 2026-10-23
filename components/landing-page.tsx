@@ -318,20 +318,21 @@ export function LandingPage() {
             <div className="overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-lg">
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <img
-                  src="/images/team-founders.jpeg"
+                  src="/images/team-founders.png"
                   alt="Nicole and May, the founders of Enaj"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="p-8">
                 <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                  Our Founders
+                  Meet the founders
                 </span>
                 <h3 className="mt-4 text-xl font-semibold text-card-foreground">Nicole &amp; May</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Placeholder text — replace with your own words. Nicole and May came up with the
-                  idea for enaJ and built it from the ground up. Share your background, what
-                  brought you together, and the vision you have for empowering shoppers everywhere.
+                  Nicole and May’s journey began in an unexpected place: Facebook. While finishing college and preparing to move to New York City, the two connected through a roommate group, instantly clicked, and soon began their NYC chapter together. <br /><br />
+                  Their shared passion for health and wellness led to countless evenings researching ingredients, comparing products, and figuring out what worked best for their individual needs. Eventually, they asked: <strong>Why are we spending hours doing research that a tool should be able to do for us?</strong> <br /><br />
+                  So, they decided to build one. <br /><br />
+                  For more than a year, Nicole and May worked before and after their day jobs to bring enaJ to life. While this is only the beginning of what they envision, they’re so excited to help you become a more informed, empowered consumer, who can make shopping decisions based on what’s best for <strong>you</strong>.
                 </p>
               </div>
             </div>
@@ -347,14 +348,22 @@ export function LandingPage() {
               </div>
               <div className="p-8">
                 <span className="inline-flex items-center rounded-full bg-secondary/30 px-3 py-1 text-xs font-semibold text-accent-foreground">
-                  Our Why
+                  Our Why, Jane
                 </span>
-                <h3 className="mt-4 text-xl font-semibold text-card-foreground">Jane</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Placeholder text — replace with your own words. Jane, Nicole&apos;s mom, lives
-                  with Parkinson&apos;s disease and is the reason enaJ exists. Share her story and
-                  how her experience navigating ingredients and health needs inspired you to create
-                  a smarter, safer way to shop.
+                  <strong>enaJ</strong> began with a deeply personal why. Nicole’s mom, Jane, was diagnosed with Parkinson’s disease in 2014,
+                  when Nicole was just 12. Growing up, Nicole watched her mom navigate endless information around food, ingredients,
+                  exercise, and everyday choices in an effort to better understand what helped her feel her best. As Nicole became
+                  more educated in the health space, she began helping Jane make sense of it all and wished there were a tool that
+                  could make that information easier to understand and personalize.
+                  <br /><br />
+                  When Nicole met May in 2024, she found someone who shared that same passion. May and her mom live with a CDH1 genetic mutation, giving her a deeply personal
+                  connection to health education as well. Nicole and May also both struggled with skin sensitivities,
+                  spending countless nights researching ingredients and cross-referencing products with their own individual health needs.
+                  <br /><br />
+                  They kept asking the same question: <strong>Why isn’t there a tool that can do this for us?</strong>
+                  <br /><br />
+                  That question became <strong>enaJ</strong> – named after Jane and built to make understanding what you eat and use every day simpler, more personal, and accessible, so you can make informed choices based on what’s best for <strong>you</strong>.
                 </p>
               </div>
             </div>
