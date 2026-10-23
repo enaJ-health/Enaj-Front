@@ -325,9 +325,8 @@ export function LandingPage() {
               </div>
               <div className="p-8">
                 <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                  Meet the founders
+                  Meet the founders, Nicole & May
                 </span>
-                <h3 className="mt-4 text-xl font-semibold text-card-foreground">Nicole &amp; May</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   Nicole and May’s journey began in an unexpected place: Facebook. While finishing college and preparing to move to New York City, the two connected through a roommate group, instantly clicked, and soon began their NYC chapter together. <br /><br />
                   Their shared passion for health and wellness led to countless evenings researching ingredients, comparing products, and figuring out what worked best for their individual needs. Eventually, they asked: <strong>Why are we spending hours doing research that a tool should be able to do for us?</strong> <br /><br />
